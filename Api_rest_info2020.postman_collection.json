@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "a3d326bd-cab1-461a-8ab4-65d6659ceb6d",
+		"name": "Api_rest_info2020",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/users/guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"apellido\":\"Ramirez\",\r\n\t\"ciudad\":\"Corrientes\",\r\n\t\"email\":\"ramirez@pepe.com\",\r\n\t\"nombre\":\"Carlos\",\r\n\t\"pais\":\"Argentina\",\r\n\t\"password\":\"123456\",\r\n\t\"provincia\":\"Corrientes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"guardar"
+					]
+				},
+				"description": "Guardo Usuario metodo post"
+			},
+			"response": [
+				{
+					"name": "localhost:8080/users/guardar",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"apellido\":\"Gomez\",\r\n\t\"ciudad\":\"Resistencia\",\r\n\t\"email\":\"hgomez@pepe.com\",\r\n\t\"nombre\":\"Horacio\",\r\n\t\"pais\":\"Argentina\",\r\n\t\"password\":\"123456\",\r\n\t\"provincia\":\"Chaco\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"guardar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Dec 2020 21:26:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/users/listusers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/listusers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"listusers"
+					]
+				},
+				"description": "GET todos los usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/posts/listpost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/listpost",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"listpost"
+					]
+				},
+				"description": "GET de posteos, todos."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/posts/guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"autor\":\"1\",\r\n\t\"contenido\":\"sarasa sarasa\",\r\n\t\"descripcion\":\"mas sarasa\",\r\n\t\"titulo\":\"prueba blog\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"guardar"
+					]
+				},
+				"description": "POST guardar un post"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/eliminar/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/eliminar/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"eliminar",
+						"4"
+					]
+				},
+				"description": "Eliminar usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"apellido\":\"Rovira\",\r\n\t\"ciudad\":\"Corrientes\",\r\n\t\"email\":\"rovira@pepe.com\",\r\n\t\"nombre\":\"Carlos\",\r\n\t\"pais\":\"Argentina\",\r\n\t\"password\":\"123456\",\r\n\t\"provincia\":\"Corrientes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"guardar"
+					]
+				},
+				"description": "Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 5,\r\n        \"nombre\": \"Carlos\",\r\n        \"apellido\": \"Ramirez\",\r\n        \"email\": \"ramirez@pepe.com\",\r\n        \"password\": \"123456\",\r\n        \"fecha_creacion\": \"2020-12-18\",\r\n        \"ciudad\": \"Charata\",\r\n        \"provincia\": \"Chaco\",\r\n        \"pais\": \"Argentina\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/modificar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"modificar"
+					]
+				},
+				"description": "Metodo PUT para modificar usuario"
+			},
+			"response": []
+		}
+	]
+}
