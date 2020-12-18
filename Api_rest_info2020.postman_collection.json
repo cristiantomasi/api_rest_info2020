@@ -232,6 +232,105 @@
 				"description": "Metodo PUT para modificar usuario"
 			},
 			"response": []
+		},
+		{
+			"name": "localhost:8080/posts/listpost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/listpost",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"listpost"
+					]
+				},
+				"description": "Listar post"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/posts/guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"autor\":\"1\",\r\n\t\"contenido\":\"sarasa sarasa\",\r\n\t\"descripcion\":\"mas sarasa\",\r\n\t\"titulo\":\"prueba blog\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"guardar"
+					]
+				},
+				"description": "POST guardar Post"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/posts/eliminar/8",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/eliminar/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"eliminar",
+						"4"
+					]
+				},
+				"description": "Elimnar post"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/posts/modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\": \"2\",\r\n    \"autor\":\"1\",\r\n\t\"contenido\":\"mucha mucha mas zaraza\",\r\n\t\"descripcion\":\"mas sarasa\",\r\n\t\"titulo\":\"prueba blogz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/modificar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"modificar"
+					]
+				},
+				"description": "PUT modificar POST"
+			},
+			"response": []
 		}
 	]
 }
