@@ -2,6 +2,7 @@ package com.informatori.api.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,11 +15,14 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    
+    @Column(length = 100)
     private String titulo;
+    @Column(length = 150)
     private String descripcion;
+    @Column(length = 150)
     private String contenido;
     private LocalDate fecha_creacion = LocalDate.now();
+    @Column(nullable=false)
     private Long autor;
     private Boolean publicado = false;
 

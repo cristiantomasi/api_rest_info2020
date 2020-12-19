@@ -331,6 +331,105 @@
 				"description": "PUT modificar POST"
 			},
 			"response": []
+		},
+		{
+			"name": "localhost:8080/comments/guardar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"autor\":\"7\",\r\n\t\"comentario\":\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy\",\r\n\t\"post_id\":\"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/comments/guardar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"guardar"
+					]
+				},
+				"description": "POST guardar comentario"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/comments/listarcomment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/comments/listarcomment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"listarcomment"
+					]
+				},
+				"description": "GET Listar todos los comentarios"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/comments/eliminar/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/comments/eliminar/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"eliminar",
+						"4"
+					]
+				},
+				"description": "Borrar un comentario"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/comments/modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":\"5\",\r\n    \"autor\":\"1\",\r\n\t\"comentario\":\"XXXXXXXX XXXXXX Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy\",\r\n\t\"post_id\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/comments/modificar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"modificar"
+					]
+				},
+				"description": "PUT modificar comentario"
+			},
+			"response": []
 		}
 	]
 }
